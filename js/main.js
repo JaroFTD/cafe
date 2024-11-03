@@ -517,6 +517,36 @@ document.addEventListener('keydown', function (e) {
          Element.prototype.msMatchesSelector;
    }
 })();
+// ЯКОРЬ (ПЛАВНАЯ ПРОКРУТКА ДО НУЖНОГО БЛОКА)
+let menuLinks = document.querySelectorAll('[data-goto]');
+if (menuLinks.length > 0) {
+   for (let menuLink of menuLinks) {
+      menuLink.addEventListener('click', onMenuLinkClick);
+   }
+
+   function onMenuLinkClick(e) {
+      let menuLink = e.target;
+
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+         let gotoBlock = document.querySelector(menuLink.dataset.goto);
+         let gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+         if (menu.classList.contains('_active')) {
+            document.body.classList.remove('_lock');
+            menu.classList.remove('_active');
+            menuBody.classList.remove('_active');
+         }
+
+         window.scrollTo({
+            top: gotoBlockValue,
+            behavior: 'smooth'
+         });
+         e.preventDefault();
+      }
+   }
+}
+
+
 const animItems = document.querySelectorAll('._anim-items');
 if (animItems.length > 0) {
    window.addEventListener('scroll', animOnScroll);
