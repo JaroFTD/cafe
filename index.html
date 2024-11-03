@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>cafe</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header" data-lp>
+         <div class="header__container">
+            <!-- <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Логотип"></a> -->
+            <div class="header__logo">ЛОГО</div>
+            <div class="header__menu menu">
+               <nav class="menu__body">
+                  <ul class="menu__list">
+                     <li class="menu__item"><a href="#main" data-goto=".main" class="menu__link">Главная</a></li>
+                     <li class="menu__item"><a href="#about" data-goto=".services" class="menu__link">О нас</a></li>
+                     <li class="menu__item"><a href="#service" data-goto=".cosmetics" class="menu__link">Меню</a></li>
+                     <li class="menu__item"><a href="#stocks" data-goto=".stocks" class="menu__link">Акции</a></li>
+                     <li class="menu__item"><a href="#advantages" data-goto=".team" class="menu__link">Преимущества</a></li>
+                     <li class="menu__item"><a href="#gallery" data-goto=".portfolio" class="menu__link">Галлерея</a></li>
+                     <li class="menu__item"><a href="#reviews" data-goto=".reviews" class="menu__link">Отзывы</a></li>
+                     <li class="menu__item"><a href="#callback" data-goto=".contacts" class="menu__link">Контакты</a></li>
+                  </ul>
+               </nav>
+               <button type="button" class="menu__icon icon-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <section id="main" class="page__main main">
+            <div class="main__container _anim-items _anim-no-hide">
+               <div class="main__body">
+                  <div class="main__label label">Лучшая еда здесь</div>
+                  <h1 class="main__title title">Ваш уютный <br> уголок в городе</h1>
+                  <h2 class="main__text text">Приходите к нам отведать изысканные блюда и насладиться атмосферой тепла и комфорта</h2>
+                  <a href="#service" class="main__btn btn"><span>Меню</span></a>
+               </div>
+               <div class="main__gallery">
+                  <div class="main__image">
+                     <img src="img/main/cafe.jpg" alt="Кафе">
+                     <div class="main__image--decor-1"></div>
+                     <div class="main__image--decor-2"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="about" class="page__about about">
+            <div class="about__container">
+               <div class="about__body _anim-items _anim-no-hide">
+                  <h2 class="about__title title">О нас</h2>
+                  <div class="about__text text">
+                     <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, inventore doloribus facilis quos rem animi voluptatem provident, eaque dolorum quae fugiat necessitatibus dolores, natus dolorem qui neque. Vel molestias blanditiis velit? Laborum illum tempore, ducimus consequuntur ipsam vero expedita soluta eligendi numquam quidem adipisci, pariatur, eveniet saepe ullam ex vel fugiat laudantium iste alias aliquam quaerat deserunt. Et, iste vel.
+                     </p>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi praesentium obcaecati explicabo non nihil suscipit minus nemo pariatur quos, voluptates sit placeat, voluptatum maxime mollitia aspernatur aliquam ducimus tempora dolores.
+                     </p>
+                  </div>
+                  <a href="#callback" class="about__btn btn"><span>Где нас найти</span></a>
+               </div>
+            </div>
+         </section>
+         <section id="service" class="page__service service">
+            <div class="service__container _anim-items _anim-no-hide">
+               <div class="service__top">
+                  <h2 class="service__title title">Наше меню</h2>
+                  <div class="service__text text">У нас вы найдёте блюда разных кухонь мира: европейской, азиатской, восточной и экзотической.</div>
+               </div>
+               <div class="service__body">
+                  <div data-tabs data-tabs-animate class="service__tabs tabs-service tabs">
+                     <nav data-tabs-titles class="tabs-service__navigation tabs__navigation">
+                        <button type="button" class="tabs-service__title tabs__title _tab-active">Основное меню</button>
+                        <button type="button" class="tabs-service__title tabs__title">Закуски</button>
+                        <button type="button" class="tabs-service__title tabs__title">Барная карта</button>
+                     </nav>
+                     <div data-tabs-body class="tabs-service__content">
+                        <div class="tabs-service__body">
+                           <a href="../img/service/menu-01.jpg" data-fslightbox="gallery" class="tabs-service__image">
+                              <img src="img/service/menu-01.jpg" alt="Основное меню">
+                           </a>
+                        </div>
+                        <div class="tabs-service__body">
+                           <a href="../img/service/menu-02.jpg" data-fslightbox="gallery" class="tabs-service__image">
+                              <img src="img/service/menu-02.jpg" alt="Закуски">
+                           </a>
+                        </div>
+                        <div class="tabs-service__body">
+                           <a href="../img/service/menu-03.jpg" data-fslightbox="gallery" class="tabs-service__image">
+                              <img src="img/service/menu-03.jpg" alt="Барная карта">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="stocks" class="page__stocks stocks">
+            <div class="stocks__container _anim-items _anim-no-hide">
+               <h2 class="stocks__title title">Акции</h2>
+               <div class="stocks__body">
+                  <article class="stocks__column">
+                     <div class="stocks__item item-stocks">
+                        <div class="item-stocks__image">
+                           <img src="img/stocks/01.jpg" alt="Акция">
+                        </div>
+                        <div class="item-stocks__body">
+                           <h3 class="item-stocks__title">Счастливые часы</h3>
+                           <div class="item-stocks__text">
+                              В определённое время дня с 12:00 до 16:00 предлагаются скидки на все блюда и напитки.
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="stocks__column">
+                     <div class="stocks__item item-stocks">
+                        <div class="item-stocks__image">
+                           <img src="img/stocks/02.jpg" alt="Акция">
+                        </div>
+                        <div class="item-stocks__body">
+                           <h3 class="item-stocks__title">Комбо-обеды</h3>
+                           <div class="item-stocks__text">
+                              Специальные наборы обедов, включающие основное блюдо, гарнир, напиток и десерт по сниженной цене.
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="stocks__column">
+                     <div class="stocks__item item-stocks">
+                        <div class="item-stocks__image">
+                           <img src="img/stocks/03.jpg" alt="Акция">
+                        </div>
+                        <div class="item-stocks__body">
+                           <h3 class="item-stocks__title">День ребёнка</h3>
+                           <div class="item-stocks__text">
+                              Вторник, один день в неделю, когда дети до определённого 10 лет могут есть бесплатно или со скидкой, а также участвовать в развлекательных мероприятиях.
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+         <section id="advantages" class="page__advantages advantages">
+            <div class="advantages__container _anim-items _anim-no-hide">
+               <h2 class="advantages__title title">Почему мы?</h2>
+               <div class="advantages__body">
+                  <div class="advantages__column">
+                     <div class="advantages__item item-advantages">
+                        <div class="item-advantages__icon item-advantages__icon--sofa">
+                           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.90473 4.25001C8.93606 4.25001 8.96781 4.25002 9 4.25002H15C15.0322 4.25002 15.0639 4.25001 15.0953 4.25001C15.9333 4.24988 16.4668 4.24981 16.9267 4.34129C18.811 4.71609 20.2839 6.18906 20.6587 8.07334L19.9231 8.21966L20.6587 8.07334C20.7284 8.4234 20.7449 8.81605 20.7488 9.35321C21.9037 9.67929 22.75 10.7408 22.75 12V14.4445C22.75 15.9742 21.9522 17.3176 20.75 18.0813V19C20.75 19.4142 20.4142 19.75 20 19.75C19.5858 19.75 19.25 19.4142 19.25 19V18.6748C18.989 18.7242 18.7198 18.75 18.4444 18.75H5.55556C5.28024 18.75 5.01095 18.7242 4.75 18.6748V19C4.75 19.4142 4.41421 19.75 4 19.75C3.58579 19.75 3.25 19.4142 3.25 19V18.0813C2.04779 17.3176 1.25 15.9742 1.25 14.4445V12C1.25 10.7408 2.09631 9.67929 3.25116 9.35321C3.25505 8.81605 3.27164 8.4234 3.34127 8.07334C3.71608 6.18906 5.18904 4.71609 7.07332 4.34129C7.53324 4.24981 8.06666 4.24988 8.90473 4.25001ZM4.75168 9.35401C5.90507 9.68103 6.75 10.7419 6.75 12V13.2C6.75 13.2276 6.77239 13.25 6.8 13.25H17.2C17.2276 13.25 17.25 13.2276 17.25 13.2V12C17.25 10.7419 18.0949 9.68103 19.2483 9.35401C19.2443 8.84457 19.231 8.58419 19.1876 8.36598C18.9311 7.07673 17.9233 6.06891 16.634 5.81247C16.3384 5.75365 15.9653 5.75002 15 5.75002H9C8.03474 5.75002 7.66164 5.75365 7.36596 5.81247C6.07671 6.06891 5.06889 7.07673 4.81245 8.36597C4.76904 8.58419 4.75569 8.84457 4.75168 9.35401ZM4 10.75C3.30964 10.75 2.75 11.3097 2.75 12V14.4445C2.75 15.9939 4.00609 17.25 5.55556 17.25H18.4444C19.9939 17.25 21.25 15.9939 21.25 14.4445V12C21.25 11.3097 20.6904 10.75 20 10.75C19.3096 10.75 18.75 11.3097 18.75 12V13.2C18.75 14.0561 18.056 14.75 17.2 14.75H6.8C5.94396 14.75 5.25 14.0561 5.25 13.2V12C5.25 11.3097 4.69036 10.75 4 10.75Z" fill="#1C274C"/>
+                           </svg>
+                        </div>
+                        <div class="item-advantages__text text">Уютная атмосфера</div>
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__item item-advantages">
+                        <div class="item-advantages__icon item-advantages__icon--eat">
+                           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511 511" xml:space="preserve">
+                              <g>
+                                 <path d="M391.5,0c-4.142,0-7.5,3.358-7.5,7.5v120c0,4.687-3.813,8.5-8.5,8.5s-8.5-3.813-8.5-8.5V7.5c0-4.142-3.358-7.5-7.5-7.5
+                                    S352,3.358,352,7.5v120c0,4.687-3.813,8.5-8.5,8.5s-8.5-3.813-8.5-8.5V7.5c0-4.142-3.358-7.5-7.5-7.5S320,3.358,320,7.5v120
+                                    c0,4.687-3.813,8.5-8.5,8.5s-8.5-3.813-8.5-8.5V7.5c0-4.142-3.358-7.5-7.5-7.5S288,3.358,288,7.5v160
+                                    c0,12.958,10.542,23.5,23.5,23.5c4.687,0,8.5,3.813,8.5,8.5v73.409c-13.759,3.374-24,15.806-24,30.591v160
+                                    c0,26.191,21.309,47.5,47.5,47.5s47.5-21.309,47.5-47.5v-160c0-14.785-10.241-27.216-24-30.591V199.5c0-4.687,3.813-8.5,8.5-8.5
+                                    c12.958,0,23.5-10.542,23.5-23.5V7.5C399,3.358,395.642,0,391.5,0z M376,303.5v160c0,17.92-14.58,32.5-32.5,32.5
+                                    S311,481.42,311,463.5v-160c0-9.098,7.402-16.5,16.5-16.5h32C368.598,287,376,294.402,376,303.5z M375.5,176
+                                    c-12.958,0-23.5,10.542-23.5,23.5V272h-17v-72.5c0-12.958-10.542-23.5-23.5-23.5c-4.687,0-8.5-3.813-8.5-8.5v-18.097
+                                    c2.638,1.027,5.503,1.597,8.5,1.597c6.177,0,11.801-2.399,16-6.31c4.199,3.911,9.823,6.31,16,6.31s11.801-2.399,16-6.31
+                                    c4.199,3.911,9.823,6.31,16,6.31c2.997,0,5.862-0.57,8.5-1.597V167.5C384,172.187,380.187,176,375.5,176z"/>
+                                 <path d="M183.5,0c-20.479,0-38.826,11.623-51.663,32.728C118.86,54.064,112,84.07,112,119.5c0,25.652,13.894,49.464,36.26,62.144
+                                    c7.242,4.105,11.74,12.106,11.74,20.88v70.385c-13.759,3.374-24,15.806-24,30.591v160c0,26.191,21.309,47.5,47.5,47.5
+                                    s47.5-21.309,47.5-47.5v-160c0-14.785-10.241-27.216-24-30.591v-70.385c0-8.774,4.499-16.775,11.74-20.88
+                                    C241.106,168.964,255,145.152,255,119.5c0-35.43-6.86-65.436-19.837-86.772C222.326,11.623,203.979,0,183.5,0z M216,303.5v160
+                                    c0,17.92-14.58,32.5-32.5,32.5S151,481.42,151,463.5v-160c0-9.098,7.402-16.5,16.5-16.5h32C208.598,287,216,294.402,216,303.5z
+                                    M211.343,168.595C199.412,175.359,192,188.36,192,202.524V272h-17v-69.476c0-14.164-7.412-27.165-19.342-33.929
+                                    C137.981,158.574,127,139.762,127,119.5c0-32.68,6.104-59.99,17.653-78.978C154.809,23.826,168.242,15,183.5,15
+                                    s28.691,8.826,38.847,25.522C233.896,59.51,240,86.82,240,119.5C240,139.762,229.019,158.574,211.343,168.595z"/>
+                                 <path d="M191.5,304c-4.142,0-7.5,3.358-7.5,7.5v16c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-16
+                                    C199,307.358,195.642,304,191.5,304z"/>
+                                 <path d="M191.5,352c-4.142,0-7.5,3.358-7.5,7.5v72c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-72
+                                    C199,355.358,195.642,352,191.5,352z"/>
+                                 <path d="M351.5,304c-4.142,0-7.5,3.358-7.5,7.5v16c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-16
+                                    C359,307.358,355.642,304,351.5,304z"/>
+                                 <path d="M351.5,352c-4.142,0-7.5,3.358-7.5,7.5v72c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-72
+                                    C359,355.358,355.642,352,351.5,352z"/>
+                              </g>
+                           </svg>
+                        </div>
+                        <div class="item-advantages__text text">Качественное обслуживание</div>
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__item item-advantages">
+                        <div class="item-advantages__icon item-advantages__icon--soup">
+                           <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.003906 3.9863281 A 1.0001 1.0001 0 0 0 10.048828 4.6894531L9.4101562 6.6503906C8.6545081 8.9644197 8.910072 11.627244 10.162109 13.546875C10.988072 14.813244 11.247852 17.014498 10.6875 18.730469L10.048828 20.689453 A 1.0005836 1.0005836 0 1 0 11.951172 21.310547L12.589844 19.349609C13.345492 17.03558 13.089928 14.372756 11.837891 12.453125C11.011928 11.186756 10.752148 8.9855023 11.3125 7.2695312L11.951172 5.3105469 A 1.0001 1.0001 0 0 0 11.003906 3.9863281 z M 18.003906 3.9863281 A 1.0001 1.0001 0 0 0 17.048828 4.6894531L16.410156 6.6503906C15.654508 8.9644197 15.910072 11.627244 17.162109 13.546875C17.988072 14.813244 18.247852 17.014498 17.6875 18.730469L17.048828 20.689453 A 1.0005836 1.0005836 0 1 0 18.951172 21.310547L19.589844 19.349609C20.345492 17.03558 20.089928 14.372756 18.837891 12.453125C18.011928 11.186756 17.752148 8.9855023 18.3125 7.2695312L18.951172 5.3105469 A 1.0001 1.0001 0 0 0 18.003906 3.9863281 z M 25.003906 3.9863281 A 1.0001 1.0001 0 0 0 24.048828 4.6894531L23.410156 6.6503906C22.654508 8.9644197 22.910072 11.627244 24.162109 13.546875C24.988072 14.813244 25.247852 17.014498 24.6875 18.730469L24.048828 20.689453 A 1.0005836 1.0005836 0 1 0 25.951172 21.310547L26.589844 19.349609C27.345492 17.03558 27.089928 14.372756 25.837891 12.453125C25.011928 11.186756 24.752148 8.9855023 25.3125 7.2695312L25.951172 5.3105469 A 1.0001 1.0001 0 0 0 25.003906 3.9863281 z M 43.605469 10.005859C43.37979 10.005295 43.15447 10.027258 42.933594 10.070312C42.050087 10.242532 41.233124 10.757554 40.710938 11.570312L40.792969 11.460938L28.357422 26L4 26 A 1.0001 1.0001 0 0 0 3 27L3 30C3 30.201563 3.069136 30.384586 3.078125 30.583984 A 1.0001 1.0001 0 0 0 3.21875 31.640625C3.7431756 35.806528 6.0600565 39.465497 9.1171875 42.128906C12.576847 45.143003 16.846465 47 20.5 47L29.5 47C33.153535 47 37.423153 45.143003 40.882812 42.128906C44.342472 39.114809 47 34.866667 47 30L47 27 A 1.0001 1.0001 0 0 0 46 26L35.9375 26L46.205078 15.597656 A 1.0001 1.0001 0 0 0 46.283203 15.509766C47.468538 13.983156 47.135249 11.742091 45.556641 10.626953C44.96483 10.208897 44.282504 10.007554 43.605469 10.005859 z M 43.587891 11.994141C43.866957 11.996292 44.151151 12.082289 44.402344 12.259766C45.066906 12.729216 45.196951 13.621237 44.707031 14.267578L33.126953 26L30.990234 26L42.3125 12.761719 A 1.0001 1.0001 0 0 0 42.392578 12.652344C42.614391 12.307102 42.949506 12.090312 43.3125 12.019531C43.403249 12.001836 43.494868 11.993424 43.587891 11.994141 z M 5 28L28.675781 28 A 1.0001 1.0001 0 0 0 28.955078 28L33.404297 28 A 1.0001 1.0001 0 0 0 33.669922 28L45 28L45 30C45 34.133333 42.7087 37.885191 39.568359 40.621094C36.428019 43.356997 32.446465 45 29.5 45L20.5 45C17.553535 45 13.571981 43.356997 10.431641 40.621094C7.8116502 38.338527 5.8700615 35.328419 5.2695312 32L41 32 A 1.0001 1.0001 0 1 0 41 30L5 30L5 28 z"/></svg>
+                        </div>
+                        <div class="item-advantages__text text">Разнообразное меню и качественные блюда</div>
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__item item-advantages">
+                        <div class="item-advantages__icon">
+                           <svg viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M148,152a60,60,0,0,0,0-120H88a8.00039,8.00039,0,0,0-8,8v96H56a8,8,0,0,0,0,16H80v16H56a8,8,0,0,0,0,16H80v32a8,8,0,0,0,16,0V184h48a8,8,0,0,0,0-16H96V152ZM96,48h52a44,44,0,0,1,0,88H96Z"/>
+                           </svg>
+                        </div>
+                        <div class="item-advantages__text text">Доступные цены</div>
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__item item-advantages">
+                        <div class="item-advantages__icon item-advantages__icon--time">
+                           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M12 6V12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.24 16.24L12 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </div>
+                        <div class="item-advantages__text text">Быстрое обслуживание</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="gallery" class="page__gallery gallery">
+            <div class="gallery__container _anim-items _anim-no-hide">
+               <h2 class="gallery__title title">Галерея</h2>
+               <div data-speed="0.01" class="gallery__body">
+                  <div class="gallery__items">
+                     <div class="gallery__column">
+                        <div class="gallery__row row-gallery row-gallery--left-top">
+                           <a href="../img/gallery/01.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/01.jpg" alt="Image"></a>
+                           <a href="../img/gallery/07.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/07.jpg" alt="Image"></a>
+                           <a href="../img/gallery/03.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/03.jpg" alt="Image"></a>
+                        </div>
+                        <div class="gallery__row row-gallery row-gallery--left-bottom">
+                           <a href="../img/gallery/04.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/04.jpg" alt="Image"></a>
+                           <a href="../img/gallery/11.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/11.jpg" alt="Image"></a>
+                           <a href="../img/gallery/09.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/09.jpg" alt="Image"></a>
+                        </div>
+                     </div>
+                     <div class="gallery__column">
+                        <div class="gallery__row row-gallery row-gallery--left-center">
+                           <a href="../img/gallery/02.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/02.jpg" alt="Image"></a>
+                        </div>
+                     </div>
+                     <div class="gallery__column">
+                        <div class="gallery__row row-gallery row-gallery--right-top">
+                           <a href="../img/gallery/08.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/08.jpg" alt="Image"></a>
+                           <a href="../img/gallery/06.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/06.jpg" alt="Image"></a>
+                           <a href="../img/gallery/10.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/10.jpg" alt="Image"></a>
+                        </div>
+                        <div class="gallery__row row-gallery row-gallery--right-bottom">
+                           <a href="../img/gallery/05.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/05.jpg" alt="Image"></a>
+                           <a href="../img/gallery/01.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/01.jpg" alt="Image"></a>
+                           <a href="../img/gallery/02.jpg" data-fslightbox="gallery-1" class="row-gallery__item"><img src="img/gallery/02.jpg" alt="Image"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="reviews" class="page__reviews reviews">
+            <div class="reviews__container _anim-items _anim-no-hide">
+               <h2 class="reviews__title title">Отзывы</h2>
+               <div class="reviews__body">
+                  <div class="reviews__slider swiper">
+                     <div class="reviews__wrapper swiper-wrapper">
+                        <div class="reviews__slide swiper-slide slide-reviews">
+                           <div class="slide-reviews__stars">
+                              <svg xmlns="http://www.w3.org/2000/svg"><g fill="#FCC226"><path d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0ZM35 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L35 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L35 0ZM60 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L60 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L60 0ZM85 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L85 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L85 0ZM110 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L110 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L110 0Z"/></g></svg>
+                           </div>
+                           <div class="slide-reviews__text text">
+                              Заведение с приятной атмосферой и вкусной едой. Удобное расположение, хороший выбор кофе и приятная обстановка делают это кафе отличным местом для отдыха. Однако стоит учесть, что цены здесь не самые дешёвые.
+                           </div>
+                           <div class="slide-reviews__name">Алиса Иванова</div>
+                        </div>
+                        <div class="reviews__slide swiper-slide slide-reviews">
+                           <div class="slide-reviews__stars">
+                              <svg xmlns="http://www.w3.org/2000/svg"><g fill="#FCC226"><path d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0ZM35 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L35 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L35 0ZM60 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L60 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L60 0ZM85 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L85 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L85 0ZM110 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L110 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L110 0Z"/></g></svg>
+                           </div>
+                           <div class="slide-reviews__text text">
+                              Бариста-кафе предлагает широкий ассортимент кофе и других напитков. Вкусные завтраки и обеды, уютная атмосфера и приветливый персонал делают это кафе популярным среди местных жителей. Однако стоит учесть, что в кафе тесновато и выбор блюд не самый большой.
+                           </div>
+                           <div class="slide-reviews__name">Мария Петрова</div>
+                        </div>
+                        <div class="reviews__slide swiper-slide slide-reviews">
+                           <div class="slide-reviews__stars">
+                              <svg xmlns="http://www.w3.org/2000/svg"><g fill="#FCC226"><path d="m10 0 2.245 6.91h7.266l-5.878 4.27 2.245 6.91L10 13.82l-5.878 4.27 2.245-6.91L.49 6.91h7.266L10 0ZM35 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L35 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L35 0ZM60 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L60 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L60 0ZM85 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L85 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L85 0ZM110 0l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L110 13.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266L110 0Z"/></g></svg>
+                           </div>
+                           <div class="slide-reviews__text text">
+                              Кафе славится своим вкусным кофе и домашней кухней. В кафе можно попробовать разнообразные десерты и горячие блюда. Интерьер кафе выполнен в шоколадных тонах, что создаёт уютную атмосферу. Однако стоит учесть, что в кафе бывают очереди и цены могут быть высокими.
+                           </div>
+                           <div class="slide-reviews__name">Иван Сидоров</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+               </div>
+            </div>
+         </section>
+         <section id="callback" class="page__callback callback">
+            <div class="callback__container">
+               <div class="callback__body _anim-items _anim-no-hide">
+                  <h2 class="callback__title title">Забронируйте столик</h2>
+                  <div class="callback__text text">Мы принимаем заказы по телефону, через мессенджеры или форму на сайте.</div>
+                  <div class="callback__socials socials">
+                     <a href="#" class="socials__item" aria-label="Позвонить">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#1C274C"/>
+                        </svg>
+                     </a>
+                     <a href="#" class="socials__item" aria-label="Перейти во вконтакте">
+                        <svg viewBox="-2.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.563 15.75c-0.5-0.188-0.5-0.906-0.531-1.406-0.125-1.781 0.5-4.5-0.25-5.656-0.531-0.688-3.094-0.625-4.656-0.531-0.438 0.063-0.969 0.156-1.344 0.344s-0.75 0.5-0.75 0.781c0 0.406 0.938 0.344 1.281 0.875 0.375 0.563 0.375 1.781 0.375 2.781 0 1.156-0.188 2.688-0.656 2.75-0.719 0.031-1.125-0.688-1.5-1.219-0.75-1.031-1.5-2.313-2.063-3.563-0.281-0.656-0.438-1.375-0.844-1.656-0.625-0.438-1.75-0.469-2.844-0.438-1 0.031-2.438-0.094-2.719 0.5-0.219 0.656 0.25 1.281 0.5 1.813 1.281 2.781 2.656 5.219 4.344 7.531 1.563 2.156 3.031 3.875 5.906 4.781 0.813 0.25 4.375 0.969 5.094 0 0.25-0.375 0.188-1.219 0.313-1.844s0.281-1.25 0.875-1.281c0.5-0.031 0.781 0.406 1.094 0.719 0.344 0.344 0.625 0.625 0.875 0.938 0.594 0.594 1.219 1.406 1.969 1.719 1.031 0.438 2.625 0.313 4.125 0.25 1.219-0.031 2.094-0.281 2.188-1 0.063-0.563-0.563-1.375-0.938-1.844-0.938-1.156-1.375-1.5-2.438-2.563-0.469-0.469-1.063-0.969-1.063-1.531-0.031-0.344 0.25-0.656 0.5-1 1.094-1.625 2.188-2.781 3.188-4.469 0.281-0.5 0.938-1.656 0.688-2.219-0.281-0.625-1.844-0.438-2.813-0.438-1.25 0-2.875-0.094-3.188 0.156-0.594 0.406-0.844 1.063-1.125 1.688-0.625 1.438-1.469 2.906-2.344 4-0.313 0.375-0.906 1.156-1.25 1.031z"></path>
+                        </svg>
+                     </a>
+                     <a href="#" class="socials__item" aria-label="Перейти в телеграмм">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"/>
+                        </svg>
+                     </a>
+                     <a href="#" class="socials__item" aria-label="Перейти в инстаграмм">
+                        <svg version="1.1" id="Shopicons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                           viewBox="0 0 48 48" xml:space="preserve">
+                           <g>
+                              <path class="st0" d="M0,0h48v48H0V0z"/>
+                              <path d="M36,4H12c-4.4,0-8,3.6-8,8v24c0,4.4,3.6,8,8,8h24c4.4,0,8-3.6,8-8V12C44,7.6,40.4,4,36,4z M24,34c-5.5,0-10-4.5-10-10
+                                 s4.5-10,10-10s10,4.5,10,10S29.5,34,24,34z M35,15c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C37,14.1,36.1,15,35,15z"/>
+                           </g>
+                        </svg>
+                     </a>
+                  </div>
+                  <button data-popup="popup" type="button" class="callback__btn btn"><span>Забронировать</span></button>
+               </div>
+            </div>
+         </section>
+         <section class="page__contacts contacts">
+            <div class="contacts__container _anim-items _anim-no-hide">
+               <h2 class="contacts__title title">Наши кафе</h2>
+               <div data-tabs data-tabs-contacts class="contacts__tabs tabs-contacts tabs">
+                  <nav data-tabs-titles class="tabs-contacts__navigation tabs__navigation">
+                     <button type="button" class="tabs-contacts__title tabs__title _tab-active">Мы в Центре</button>
+                     <button type="button" class="tabs-contacts__title tabs__title">Мы на Промышленном</button>
+                  </nav>
+                  <div data-tabs-body class="tabs-contacts__content">
+                     <div class="tabs-contacts__body">
+                        <div class="tabs-contacts__row">
+                           <div class="tabs-contacts__map">
+                              <iframe title="Карта с адресом кафе 1" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec5cc923ebddbc355748d7e80adc176fe644d56f8e747120895087d762b5e567&amp;source=constructor"></iframe>
+                           </div>
+                           <div class="tabs-contacts__info">
+                              <div class="tabs-contacts__desc text">Наше кафе находится в г. Москва, ул. Примерная, д. 27, в 10 минутах ходьбы от станции метро «Площадь Революции»</div>
+                              <a href="tel:+79119246345" class="tabs-contacts__phone text">+7 999 999 99-99</a>
+                              <address class="tabs-contacts__address text">
+                                 Центр <br>
+                                 ул. Примерная, д. 27 <br>
+                                 г. Москва
+                              </address>
+                              <div class="tabs-contacts__time text">Пн. — Вс.: 8:00 — 22:00</div>
+                              <a href="tel:+79999999999" class="tabs-contacts__btn btn"><span>Позвонить</span></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs-contacts__body">
+                        <div class="tabs-contacts__row">
+                           <div class="tabs-contacts__map">
+                              <iframe title="Карта с адресом кафе 2" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec5cc923ebddbc355748d7e80adc176fe644d56f8e747120895087d762b5e567&amp;source=constructor"></iframe>
+                           </div>
+                           <div class="tabs-contacts__info">
+                              <div class="tabs-contacts__desc text">Наше кафе находится в г. Санкт-Петербург, пр. Центральный, д. 12, в 5 минутах ходьбы от станции метро «Горьковская»</div>
+                              <a href="tel:+79119246345" class="tabs-contacts__phone text">+7 999 999 99-99</a>
+                              <address class="tabs-contacts__address text">
+                                 Промышленный <br>
+                                 пр. Центральный, д. 12 <br>
+                                 г. Санкт-Петербург
+                              </address>
+                              <div class="tabs-contacts__time text">Пн. — Вс.:<br> 9:00 — 22:00</div>
+                              <a href="tel:+79999999999" class="tabs-contacts__btn btn"><span>Позвонить</span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__body">
+               <div class="footer__copy">© 2024 NEW MY SITE</div>
+            </div>
+         </div>
+      </footer>
+   </div>
+		<div id="popup" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<a href="#header" class="popup__close close-popup" data-close>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<div class="popup__body">
+						<form action="#" method="post" class="popup__form form-callback">
+                     <div class="form-callback__item">
+                        <input autocomplete="off" type="text" name="name" placeholder="Имя" class="form-callback__input input _req">
+                     </div>
+                     <div class="form-callback__item">
+                        <input autocomplete="off" type="tel" name="phone" placeholder="Телефон" class="form-callback__input input _req">
+                     </div>
+                     <div class="form-callback__item">
+                        <textarea autocomplete="off" name="message" placeholder="Сообщение" class="form-callback__textarea textarea"></textarea>
+                     </div>
+                     <button type="submit" class="form-callback__btn btn"><span>Отправить</span></button>
+                     <div class="form-callback__policy text">Нажимая на кнопку, вы соглашаетесь с нашей политикой&nbspконфиденциальности</div>
+                  </form>
+					</div>
+				</div>
+			</div>
+		</div>   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="js/fslightbox.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
