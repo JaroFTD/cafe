@@ -1549,17 +1549,8 @@ body._lock {
 @media (max-width: 47.99875em) {
   .main__image {
     max-width: 25rem;
+    max-height: 18.75rem;
     margin: 0 auto;
-  }
-  @supports (max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
-    .main__image {
-      max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem );
-    }
-  }
-  @supports not (max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
-    .main__image {
-      max-height: calc(18.75rem + 12.5 * (100vw - 20rem) / 28);
-    }
   }
   @supports (margin-block: clamp( 1.875rem , 0.9821428571rem  +  4.4642857143vw , 3.125rem )) {
     .main__image {
