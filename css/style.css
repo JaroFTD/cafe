@@ -1571,6 +1571,19 @@ body._lock {
       margin-block: calc(1.875rem + 1.25 * (100vw - 20rem) / 28);
     }
   }
+  .main__image img {
+    max-width: 25rem;
+  }
+  @supports (max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
+    .main__image img {
+      max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem );
+    }
+  }
+  @supports not (max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
+    .main__image img {
+      max-height: calc(18.75rem + 12.5 * (100vw - 20rem) / 28);
+    }
+  }
 }
 
 @supports (padding-block: clamp( 1.875rem , 0.9041262136rem  +  4.854368932vw , 5rem )) {
