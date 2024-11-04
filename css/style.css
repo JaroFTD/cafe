@@ -2142,8 +2142,9 @@ body._lock {
 .reviews__body .swiper-pagination {
   bottom: 0px;
 }
-.reviews__body .swiper-pagination-bullet {
+.reviews__body .swiper-pagination .swiper-pagination-bullet {
   background-color: #0b133e;
+  margin: 0rem 0.375rem;
 }
 .slide-reviews {
   text-align: center;
