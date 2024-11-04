@@ -1415,7 +1415,6 @@ body._lock {
 }
 .main__btn span {
   padding: 0.625rem 1.5625rem;
-  background-color: red;
 }
 .main__gallery {
   -webkit-box-flex: 0;
@@ -1551,6 +1550,16 @@ body._lock {
   .main__image {
     max-width: 25rem;
     margin: 0 auto;
+  }
+  @supports (max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
+    .main__image {
+      max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem );
+    }
+  }
+  @supports not (max-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
+    .main__image {
+      max-height: calc(18.75rem + 12.5 * (100vw - 20rem) / 28);
+    }
   }
   @supports (margin-block: clamp( 1.875rem , 0.9821428571rem  +  4.4642857143vw , 3.125rem )) {
     .main__image {
