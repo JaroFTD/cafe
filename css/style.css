@@ -1415,7 +1415,7 @@ body._lock {
 }
 .main__btn span {
   padding: 0.625rem 1.5625rem;
-  background-color: yellow;
+  background-color: green;
 }
 .main__gallery {
   -webkit-box-flex: 0;
@@ -1550,8 +1550,17 @@ body._lock {
 @media (max-width: 47.99875em) {
   .main__image {
     max-width: 25rem;
-    max-height: 18.75rem;
     margin: 0 auto;
+  }
+  @supports (height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
+    .main__image {
+      height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem );
+    }
+  }
+  @supports not (height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 31.25rem )) {
+    .main__image {
+      height: calc(18.75rem + 12.5 * (100vw - 20rem) / 28);
+    }
   }
   @supports (margin-block: clamp( 1.875rem , 0.9821428571rem  +  4.4642857143vw , 3.125rem )) {
     .main__image {
