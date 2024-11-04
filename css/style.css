@@ -1020,8 +1020,8 @@ body._lock {
   z-index: 50;
   -webkit-transition: padding-top 0.4s ease 0s, padding-bottom 0.4s ease 0s, background-color 0.4s ease 0s;
   transition: padding-top 0.4s ease 0s, padding-bottom 0.4s ease 0s, background-color 0.4s ease 0s;
-  -webkit-animation: fade-in-top 0.6s linear 1 normal running 0s both;
-          animation: fade-in-top 0.6s linear 1 normal running 0s both;
+  -webkit-animation: fade-in-top 0.6s linear 1 normal running 0s none;
+          animation: fade-in-top 0.6s linear 1 normal running 0s none;
 }
 @supports (padding-top: clamp( 1.25rem , 1.0558252427rem  +  0.9708737864vw , 1.875rem )) {
   .header {
