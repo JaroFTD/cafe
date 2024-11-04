@@ -1415,7 +1415,6 @@ body._lock {
 }
 .main__btn span {
   padding: 0.625rem 1.5625rem;
-  background-color: green;
 }
 .main__gallery {
   -webkit-box-flex: 0;
